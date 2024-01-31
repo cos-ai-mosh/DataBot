@@ -1,6 +1,10 @@
-# Chat with your Docs
+# Chat with your Data
 
-A locally running PDF chatter where users can upload their documentation in pdf format and chat about it. It's a Next.js app that read the content of an uploaded PDF, chunks it, adds it to a vector store, and performs RAG, all client side. You can even turn off your WiFi after the site loads. Suppose if you have a book and you want to read it but you don’t have the time right now. What you can do is you can upload the book and then start a conversation with the chatbot. You can ask the summary of the book and when you get the answer, you can derive a question from the summary and ask the chatbot again. The chatbot remembers your chat history as well so you can go back and forth with the chatbot having a nice factual conversation getting to know the contents of the book without even fully reading it.
+The project motto is to develop low latency chatbot applications for any kind of data available. The implementation should/must use free open source tools. 
+
+## Features
+
+- [PDF chatbot] Upload docs in PDF format and have conversation with the chatbot. 
 
 ## Tech Stack used
 
@@ -9,7 +13,7 @@ A locally running PDF chatter where users can upload their documentation in pdf 
 - [LangChain.js](https://js.langchain.com) to call the models, perform retrieval, and generally orchestrate all the pieces.
 - [Transformers.js](https://huggingface.co/docs/transformers.js/index) to run embeddings in the browser.
 - [Docker](https://www.docker.com/products/docker-desktop/) to run chroma server.
-- [Next.js](https://nextjs.org) for frontend.
+- [Next.js](https://nextjs.org) to build web application.
 - [TailwindCSS](https://tailwindcss.com) for design.
 - [Vercel](https://vercel.com/) for hosting.
 
@@ -17,8 +21,8 @@ A locally running PDF chatter where users can upload their documentation in pdf 
 
 ### Clone/Fork
 
-- Clone this repo by running `git clone https://github.com/cosmo3769/PDFChatter`
-- Move to the root directory by running `cd PDFChatter`
+- Clone this repo by running `https://github.com/cosaimoSH/DataBot.git`
+- Move to the root directory by running `cd DataBot`
 - Install all dependencies by running `yarn install` 
 
 ### Install Ollama
@@ -43,13 +47,14 @@ Download and set up [Docker](https://www.docker.com/products/docker-desktop/) to
 
 - Clone the repo [Chroma]() by running `git clone https://github.com/chroma-core/chroma`.
 - Move to the directory by running `cd chroma`
+- Before running the server, go to `docker-compose.yml` file and add this line under `environment` to resolve CORS issue during development `- CHROMA_SERVER_CORS_ALLOW_ORIGINS=["https://pdf-chatter-beta.vercel.app"]`
 - Run docker command: `docker-compose up -d --build`
 
 ### Live version
 
 Go to [PDFChatter](https://pdf-chatter-beta.vercel.app/) deployed at vercel.
 
-### Upload PDF and Embed
+### Upload your data [PDF] and Embed
 
 Upload PDF document either by clicking or drag and drop.
 
