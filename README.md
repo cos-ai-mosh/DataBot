@@ -47,7 +47,7 @@ Download and set up [Docker](https://www.docker.com/products/docker-desktop/) to
 
 - Clone the repo [Chroma]() by running `git clone https://github.com/chroma-core/chroma`.
 - Move to the directory by running `cd chroma`
-- Before running the server, go to `docker-compose.yml` file and add this line under `environment` to resolve CORS issue during development `- CHROMA_SERVER_CORS_ALLOW_ORIGINS=["https://data-bot-phi.vercel.app"]`
+- Before running the server, go to `docker-compose.yml` file and add this line under `environment` to resolve CORS issue during development `- CHROMA_SERVER_CORS_ALLOW_ORIGINS=["https://data-bot-sooty.vercel.app"]`
 - Run docker command: `docker-compose up -d --build`
 
 ### Live version
