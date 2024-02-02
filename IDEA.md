@@ -1,6 +1,6 @@
 # Idea list for Winter of Code 2023-2024
 
-Here are some of the ideas for WoC. You may present your own ideas as well by raising an issue. To raise an issue, check [CONTRIBUTING.md](CONTRUBITING.md).
+Here are some of the ideas for WoC. You may present your own ideas as well by raising an issue. To raise an issue, check [CONTRIBUTING.md](CONTRIBUTING.md).
 
 * Improve UI/UX.
 * Persist data in the vectorstore.
