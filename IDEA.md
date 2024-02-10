@@ -7,3 +7,5 @@ Here are some of the ideas for WoC. You may present your own ideas as well by ra
 * Implement new chat like chatgpt.
 * Build a web scraper chatbot.
 * Code coverage.
+
+For communication purpose, you can contact us at [discord](https://discord.gg/CtWAkgNHBS).
